@@ -1,0 +1,149 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', '-g', 'git-it' ]
+2 info using npm@2.5.1
+3 info using node@v0.12.0
+4 verbose node symlink /usr/local/bin/node
+5 silly cache add args [ 'git-it', null ]
+6 verbose cache add spec git-it
+7 silly cache add parsed spec { raw: 'git-it',
+7 silly cache add   scope: null,
+7 silly cache add   name: 'git-it',
+7 silly cache add   rawSpec: '',
+7 silly cache add   spec: '*',
+7 silly cache add   type: 'range' }
+8 verbose addNamed git-it@*
+9 silly addNamed semver.valid null
+10 silly addNamed semver.validRange *
+11 silly addNameRange { name: 'git-it', range: '*', hasData: false }
+12 silly mapToRegistry name git-it
+13 silly mapToRegistry using default registry
+14 silly mapToRegistry registry https://registry.npmjs.org/
+15 silly mapToRegistry uri https://registry.npmjs.org/git-it
+16 verbose addNameRange registry:https://registry.npmjs.org/git-it not in flight; fetching
+17 verbose request uri https://registry.npmjs.org/git-it
+18 verbose request no auth needed
+19 info attempt registry request try #1 at 23:55:50
+20 verbose request id bf33118176e548db
+21 verbose etag "13ZJCA6ZXPYR11ZWW1XEN6F2O"
+22 http request GET https://registry.npmjs.org/git-it
+23 http 304 https://registry.npmjs.org/git-it
+24 silly get cb [ 304,
+24 silly get   { date: 'Mon, 30 Mar 2015 18:25:51 GMT',
+24 silly get     server: 'Apache',
+24 silly get     via: '1.1 varnish',
+24 silly get     'last-modified': 'Mon, 30 Mar 2015 18:25:52 GMT',
+24 silly get     'cache-control': 'max-age=60',
+24 silly get     etag: '"13ZJCA6ZXPYR11ZWW1XEN6F2O"',
+24 silly get     age: '0',
+24 silly get     'x-served-by': 'cache-fra1230-FRA',
+24 silly get     'x-cache': 'HIT',
+24 silly get     'x-cache-hits': '1',
+24 silly get     'x-timer': 'S1427739951.694043,VS0,VE732',
+24 silly get     vary: 'Accept',
+24 silly get     'content-length': '0',
+24 silly get     'keep-alive': 'timeout=10, max=50',
+24 silly get     connection: 'Keep-Alive' } ]
+25 verbose etag https://registry.npmjs.org/git-it from cache
+26 verbose get saving git-it to /Users/Nikhil/.npm/registry.npmjs.org/git-it/.cache.json
+27 silly addNameRange number 2 { name: 'git-it', range: '*', hasData: true }
+28 silly addNameRange versions [ 'git-it',
+28 silly addNameRange   [ '0.0.0',
+28 silly addNameRange     '1.0.1',
+28 silly addNameRange     '1.0.2',
+28 silly addNameRange     '1.0.4',
+28 silly addNameRange     '1.0.5',
+28 silly addNameRange     '1.0.6',
+28 silly addNameRange     '1.1.7',
+28 silly addNameRange     '1.1.8',
+28 silly addNameRange     '1.1.9',
+28 silly addNameRange     '1.2.0',
+28 silly addNameRange     '1.2.1',
+28 silly addNameRange     '1.2.2',
+28 silly addNameRange     '1.2.3',
+28 silly addNameRange     '1.2.4',
+28 silly addNameRange     '1.3.4',
+28 silly addNameRange     '1.3.5',
+28 silly addNameRange     '1.3.6',
+28 silly addNameRange     '1.3.7',
+28 silly addNameRange     '1.3.8',
+28 silly addNameRange     '1.3.9',
+28 silly addNameRange     '1.4.0',
+28 silly addNameRange     '1.5.0',
+28 silly addNameRange     '1.6.0',
+28 silly addNameRange     '1.6.2',
+28 silly addNameRange     '1.6.3' ] ]
+29 verbose addNamed git-it@1.6.3
+30 silly addNamed semver.valid 1.6.3
+31 silly addNamed semver.validRange 1.6.3
+32 silly cache afterAdd git-it@1.6.3
+33 verbose afterAdd /Users/Nikhil/.npm/git-it/1.6.3/package/package.json not in flight; writing
+34 verbose afterAdd /Users/Nikhil/.npm/git-it/1.6.3/package/package.json written
+35 silly install resolved [ { name: 'git-it',
+35 silly install resolved     version: '1.6.3',
+35 silly install resolved     description: 'Terminal app for learning Git and GitHub',
+35 silly install resolved     main: 'index.js',
+35 silly install resolved     bin: { 'git-it': './git-it.js' },
+35 silly install resolved     scripts:
+35 silly install resolved      { build: 'node guide/buildpages.js && node guide/buildpages.js zhtw',
+35 silly install resolved        'build-english': 'node guide/buildpages.js',
+35 silly install resolved        'build-zhtw': 'node guide/buildpages.js zhtw',
+35 silly install resolved        'copy-guide': 'cp -r ./guide ./.guide',
+35 silly install resolved        'git-co': 'git checkout gh-pages && git reset --hard origin/gh-pages',
+35 silly install resolved        'paste-guide': 'cp -r ./.guide/* .. && rm -rf ./.guide',
+35 silly install resolved        'git-stage': 'npm run copy-guide && npm run git-co && npm run paste-guide',
+35 silly install resolved        'git-commit': 'git add -A . && git commit -a -m \'gh-pages update\'',
+35 silly install resolved        'git-push': 'git push origin gh-pages --force && git checkout master',
+35 silly install resolved        deploy: 'npm run git-stage && npm run git-commit && npm run git-push' },
+35 silly install resolved     repository: { type: 'git', url: 'https://github.com/jlord/git-it.git' },
+35 silly install resolved     author: { name: 'Jessica Lord' },
+35 silly install resolved     license: 'BSD-2-Clause',
+35 silly install resolved     bugs: { url: 'https://github.com/jlord/git-it/issues' },
+35 silly install resolved     dependencies:
+35 silly install resolved      { 'concat-stream': '~1.2.1',
+35 silly install resolved        ecstatic: '^0.5.4',
+35 silly install resolved        'github-oauth': '0.0.4',
+35 silly install resolved        glob: '^3.2.11',
+35 silly install resolved        handlebars: '^2.0.0-alpha.4',
+35 silly install resolved        marked: '^0.3.2',
+35 silly install resolved        request: '~2.30.0',
+35 silly install resolved        'workshopper-jlord': '^0.0.6',
+35 silly install resolved        cheerio: '~0.17.0' },
+35 silly install resolved     _id: 'git-it@1.6.3',
+35 silly install resolved     dist:
+35 silly install resolved      { shasum: 'f9ac7f38a8f6603526c34daa107456d0f76b1039',
+35 silly install resolved        tarball: 'http://registry.npmjs.org/git-it/-/git-it-1.6.3.tgz' },
+35 silly install resolved     _from: 'git-it@*',
+35 silly install resolved     _npmVersion: '1.3.11',
+35 silly install resolved     _npmUser: { name: 'jlord', email: 'to.jlord@gmail.com' },
+35 silly install resolved     maintainers: [ [Object] ],
+35 silly install resolved     directories: {},
+35 silly install resolved     _shasum: 'f9ac7f38a8f6603526c34daa107456d0f76b1039',
+35 silly install resolved     _resolved: 'https://registry.npmjs.org/git-it/-/git-it-1.6.3.tgz',
+35 silly install resolved     readme: 'ERROR: No README data found!',
+35 silly install resolved     homepage: 'https://github.com/jlord/git-it' } ]
+36 info install git-it@1.6.3 into /Users/Nikhil/.node/lib
+37 info installOne git-it@1.6.3
+38 verbose installOne of git-it to /Users/Nikhil/.node/lib not in flight; installing
+39 warn locking Error: EACCES, open '/Users/Nikhil/.npm/_locks/git-it-041a98f676fe028d.lock'
+39 warn locking     at Error (native)
+39 warn locking  /Users/Nikhil/.npm/_locks/git-it-041a98f676fe028d.lock failed { [Error: EACCES, open '/Users/Nikhil/.npm/_locks/git-it-041a98f676fe028d.lock']
+39 warn locking   errno: -13,
+39 warn locking   code: 'EACCES',
+39 warn locking   path: '/Users/Nikhil/.npm/_locks/git-it-041a98f676fe028d.lock' }
+40 verbose stack Error: Attempt to unlock /Users/Nikhil/.node/lib/node_modules/git-it, which hasn't been locked
+40 verbose stack     at unlock (/usr/local/lib/node_modules/npm/lib/utils/locker.js:66:11)
+40 verbose stack     at cb (/usr/local/lib/node_modules/npm/lib/install.js:929:5)
+40 verbose stack     at /usr/local/lib/node_modules/npm/lib/install.js:933:20
+40 verbose stack     at /usr/local/lib/node_modules/npm/lib/utils/locker.js:40:9
+40 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/lockfile/lockfile.js:149:38)
+40 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/lockfile/lockfile.js:177:38
+40 verbose stack     at FSReqWrap.oncomplete (fs.js:99:15)
+41 verbose cwd /Users/Nikhil/Downloads/git/Courses-Website
+42 error Darwin 14.0.0
+43 error argv "node" "/usr/local/bin/npm" "install" "-g" "git-it"
+44 error node v0.12.0
+45 error npm  v2.5.1
+46 error Attempt to unlock /Users/Nikhil/.node/lib/node_modules/git-it, which hasn't been locked
+47 error If you need help, you may report this error at:
+47 error     <http://github.com/npm/npm/issues>
+48 verbose exit [ 1, true ]
